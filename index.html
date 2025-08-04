@@ -1,70 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Basti Ki Pathshala Foundation</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basti Ki Pathshala Foundation - Empowering Underprivileged Children</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <h1>Basti Ki Pathshala</h1>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#volunteer">Volunteer</a></li>
-      </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Basti Ki Pathshala Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#volunteer">Volunteer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h2>Empowering Underprivileged Kids Through Education</h2>
-      <p>Join our mission to bring quality education and brighter futures to the heart of local communities.</p>
-      <a href="#volunteer" class="cta-btn">Become a Volunteer</a>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Empowering Underprivileged Children Through Education</h1>
+                    <p class="lead">Join us in our mission to provide quality education to children in underserved communities.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#volunteer" class="btn btn-primary btn-lg">Become a Volunteer</a>
+                        <a href="#about" class="btn btn-outline-light btn-lg">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/hero-bg.jpg" alt="Children learning" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>
-      Basti Ki Pathshala Foundation is a youth-led initiative working to provide free education, basic resources,
-      and emotional support to children from underserved communities. Our team of passionate individuals believes
-      in the power of grassroots change, and we’re making a difference one child at a time.
-    </p>
-  </section>
+    <!-- About Us Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="images/team.jpg" alt="Our team" class="img-fluid rounded shadow mb-4 mb-lg-0">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">About Basti Ki Pathshala Foundation</h2>
+                    <p>Founded in 2015, Basti Ki Pathshala Foundation is a non-profit organization dedicated to providing quality education to underprivileged children in urban slums and rural areas.</p>
+                    <p>We believe that every child deserves access to education, regardless of their socio-economic background. Our team of passionate educators and volunteers work tirelessly to bridge the educational gap in underserved communities.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-child fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5>500+ Students</h5>
+                                    <p class="mb-0">Educated annually across our centers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-users fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5>100+ Volunteers</h5>
+                                    <p class="mb-0">Dedicated individuals making a difference</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-school fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5>10 Centers</h5>
+                                    <p class="mb-0">Operating in Delhi and surrounding areas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-book fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5>Holistic Education</h5>
+                                    <p class="mb-0">Academic + Life Skills development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="volunteer" class="volunteer">
-    <h2>Volunteer With Us</h2>
-    <form action="#" method="POST">
-      <div class="form-group">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" required />
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
-      </div>
-      <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" required />
-      </div>
-      <div class="form-group">
-        <label for="message">Why do you want to volunteer?</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-      </div>
-      <button type="submit" class="submit-btn">Submit</button>
-    </form>
-  </section>
+    <!-- Volunteer Form Section -->
+    <section id="volunteer" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <h2>Join Our Volunteer Program</h2>
+                    <p class="lead">Your time and skills can transform lives. Fill out the form below to start your journey with us.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="volunteerForm" class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                                <div class="invalid-feedback">
+                                    Please provide your first name.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                                <div class="invalid-feedback">
+                                    Please provide your last name.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid email.
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                            <div class="invalid-feedback">
+                                Please provide a phone number.
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="age" class="form-label">Age</label>
+                            <input type="number" class="form-control" id="age" min="18" required>
+                            <div class="invalid-feedback">
+                                You must be at least 18 years old.
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="occupation" class="form-label">Occupation</label>
+                            <input type="text" class="form-control" id="occupation">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="skills" class="form-label">Skills/Expertise</label>
+                            <textarea class="form-control" id="skills" rows="2"></textarea>
+                            <small class="text-muted">Tell us about your skills that could help our cause</small>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="availability" class="form-label">Availability</label>
+                            <select class="form-select" id="availability" required>
+                                <option value="" selected disabled>Select your availability</option>
+                                <option value="weekdays">Weekdays</option>
+                                <option value="weekends">Weekends</option>
+                                <option value="both">Both Weekdays and Weekends</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select your availability.
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="motivation" class="form-label">Why do you want to volunteer with us?</label>
+                            <textarea class="form-control" id="motivation" rows="3" required></textarea>
+                            <div class="invalid-feedback">
+                                Please tell us why you want to volunteer.
+                            </div>
+                        </div>
+                        
+                        <div class="d-grid">
+                            <button class="btn btn-primary btn-lg" type="submit">Submit Application</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Basti Ki Pathshala Foundation | All rights reserved</p>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <h2>Get In Touch</h2>
+                    <p class="lead">We'd love to hear from you. Reach out for collaborations, donations, or any queries.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="mb-3 text-primary">
+                                <i class="fas fa-map-marker-alt fa-2x"></i>
+                            </div>
+                            <h5>Our Address</h5>
+                            <p class="mb-0">123 Education Lane, New Delhi 110001, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="mb-3 text-primary">
+                                <i class="fas fa-phone-alt fa-2x"></i>
+                            </div>
+                            <h5>Call Us</h5>
+                            <p class="mb-0">+91 98765 43210</p>
+                            <p class="mb-0">Mon-Fri, 9am-5pm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="mb-3 text-primary">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </div>
+                            <h5>Email Us</h5>
+                            <p class="mb-0">contact@bastikipathshala.org</p>
+                            <p class="mb-0">info@bastikipathshala.org</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/logo.png" alt="Basti Ki Pathshala Logo" height="40" class="mb-3">
+                    <p>Empowering underprivileged children through education since 2015.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#about" class="text-white">About Us</a></li>
+                        <li><a href="#volunteer" class="text-white">Volunteer</a></li>
+                        <li><a href="#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="text-white">Terms of Service</a></li>
+                        <li><a href="#" class="text-white">Donation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2023 Basti Ki Pathshala Foundation. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Registered NGO under Indian Trust Act</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
