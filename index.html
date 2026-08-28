@@ -3,216 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@thesajidalam</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #4a6fa5;
-            --secondary: #166088;
-            --accent: #4fc3f7;
-            --light: #f8f9fa;
-            --dark: #212529;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        .navbar {
-            background-color: white !important;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .hero-section {
-            background: linear-gradient(135deg, rgba(74, 111, 165, 0.1) 0%, rgba(255,255,255,1) 100%);
-            padding: 5rem 0;
-        }
-        
-        .btn-primary {
-            background-color: var(--primary);
-            border-color: var(--primary);
-        }
-        
-        .btn-outline-primary {
-            color: var(--primary);
-            border-color: var(--primary);
-        }
-        
-        .btn-outline-primary:hover {
-            background-color: var(--primary);
-            color: white;
-        }
-        
-        .stat-card {
-            transition: transform 0.3s ease;
-        }
-        
-        .stat-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .contact-card {
-            transition: all 0.3s ease;
-        }
-        
-        .contact-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-        }
-        
-        footer {
-            background-color: var(--dark);
-        }
-        
-        @media (max-width: 768px) {
-            .hero-section {
-                padding: 3rem 0;
-                text-align: center;
-            }
-            
-            .display-4 {
-                font-size: 2.5rem;
-            }
-        }
-    </style>
+    <meta name="description" content="Basti Ki Pathshala Foundation empowers underprivileged children through quality education, life skills and community support in Delhi NCR.">
+    <meta name="theme-color" content="#4f46e5">
+    <title>Basti Ki Pathshala Foundation — Empowering Underprivileged Children</title>
+
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="Logo" height="50">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="logo.png" alt="Basti Ki Pathshala Foundation logo" height="44" class="me-2">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
                     <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
                     <li class="nav-item"><a class="nav-link" href="#volunteer">Volunteer</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="#volunteer" class="btn btn-brand btn-sm px-4 py-2">Join Us</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
+    <header id="home" class="hero d-flex align-items-center">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
-                    <h1 class="display-4 fw-bold mb-3">Empowering Children Through Education</h1>
-                    <p class="lead mb-4">Providing quality education to underprivileged children in underserved communities.</p>
-                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
-                        <a href="#volunteer" class="btn btn-primary btn-lg px-4">Volunteer</a>
-                        <a href="#about" class="btn btn-outline-primary btn-lg px-4">Learn More</a>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <span class="badge-soft mb-3">Non-Profit Education Initiative</span>
+                    <h1 class="hero-title">Empowering Underprivileged Children Through Education</h1>
+                    <p class="hero-subtitle lead">
+                        Every child deserves a future. Basti Ki Pathshala delivers quality education,
+                        life skills and hope to children in underserved communities across Delhi NCR.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#volunteer" class="btn btn-brand btn-lg px-4">Become a Volunteer</a>
+                        <a href="#about" class="btn btn-outline-brand btn-lg px-4">Learn More</a>
+                    </div>
+                    <div class="hero-meta d-flex justify-content-center justify-content-lg-start gap-4 mt-4">
+                        <div><strong>500+</strong><span>Students</span></div>
+                        <div><strong>100+</strong><span>Volunteers</span></div>
+                        <div><strong>10</strong><span>Centers</span></div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="https://bastikipathshala.org/wp-content/uploads/2024/02/image-1536x979.jpg" alt="Children learning" class="img-fluid rounded shadow">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold mb-3">About Our Foundation</h2>
-                <p class="lead text-muted">Transforming lives since 2015</p>
-            </div>
-            <div class="row g-4 align-items-center">
-                <div class="col-lg-6">
-                    <img src="https://bastikipathshala.org/wp-content/uploads/2024/02/Basti_Ki_Pathshala-_Official_Logo-removebg-preview.png" alt="Our team" class="img-fluid rounded shadow">
-                </div>
-                <div class="col-lg-6">
-                    <p class="mb-4">Basti Ki Pathshala Foundation is dedicated to providing quality education to underprivileged children in urban slums and rural areas. We believe every child deserves access to education.</p>
-                    
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="stat-card p-3 bg-white rounded shadow-sm text-center">
-                                <i class="fas fa-child fa-2x mb-3 text-primary"></i>
-                                <h4>500+ Students</h4>
-                                <p class="text-muted mb-0">Educated annually</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="stat-card p-3 bg-white rounded shadow-sm text-center">
-                                <i class="fas fa-users fa-2x mb-3 text-primary"></i>
-                                <h4>100+ Volunteers</h4>
-                                <p class="text-muted mb-0">Making a difference</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="stat-card p-3 bg-white rounded shadow-sm text-center">
-                                <i class="fas fa-school fa-2x mb-3 text-primary"></i>
-                                <h4>10 Centers</h4>
-                                <p class="text-muted mb-0">Across Delhi NCR</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="stat-card p-3 bg-white rounded shadow-sm text-center">
-                                <i class="fas fa-book fa-2x mb-3 text-primary"></i>
-                                <h4>Holistic Approach</h4>
-                                <p class="text-muted mb-0">Education + Life Skills</p>
-                            </div>
-                        </div>
+                    <div class="hero-media">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80" alt="Children learning together in a classroom" class="img-fluid rounded-4 shadow-lg" loading="eager">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0,64 C360,120 1080,0 1440,64 L1440,120 L0,120 Z" fill="#ffffff"></path>
+            </svg>
+        </div>
+    </header>
 
-    <!-- Volunteer Section -->
-    <section id="volunteer" class="py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center mb-5">
-                    <h2 class="display-5 fw-bold mb-3">Join Our Team</h2>
-                    <p class="lead text-muted">Your time can transform lives. Become a volunteer today.</p>
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 reveal">
+                        <div class="about-image">
+                            <img src="https://bastikipathshala.org/wp-content/uploads/2024/02/Basti_Ki_Pathshala-_Official_Logo-removebg-preview.png" alt="Basti Ki Pathshala official logo" class="img-fluid rounded-4 shadow" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 reveal">
+                        <span class="eyebrow">About Us</span>
+                        <h2 class="section-title">Transforming Lives Through Education Since 2015</h2>
+                        <p class="section-text">
+                            Basti Ki Pathshala Foundation is a non-profit organisation dedicated to providing quality
+                            education to underprivileged children in urban slums and rural areas. We believe every child
+                            — regardless of socio-economic background — deserves access to learning, opportunity and dignity.
+                        </p>
+                        <div class="row g-3 mt-2">
+                            <div class="col-sm-6">
+                                <div class="stat-card h-100">
+                                    <i class="fas fa-child"></i>
+                                    <h3>500+ Students</h3>
+                                    <p>Educated annually across our centres</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="stat-card h-100">
+                                    <i class="fas fa-users"></i>
+                                    <h3>100+ Volunteers</h3>
+                                    <p>Dedicated people making a difference</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="stat-card h-100">
+                                    <i class="fas fa-school"></i>
+                                    <h3>10 Centres</h3>
+                                    <p>Operating across Delhi NCR</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="stat-card h-100">
+                                    <i class="fas fa-book-open"></i>
+                                    <h3>Holistic Education</h3>
+                                    <p>Academics &amp; life skills development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body p-4 p-md-5">
-                            <form>
+        </section>
+
+        <section id="programs" class="section section-alt">
+            <div class="container">
+                <div class="section-head text-center reveal">
+                    <span class="eyebrow">What We Do</span>
+                    <h2 class="section-title">Our Programs</h2>
+                    <p class="section-text mx-auto">A complete support system that helps children learn, grow and thrive.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <article class="program-card">
+                            <div class="program-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h3>Quality Education</h3>
+                            <p>Remedial classes, homework support and foundational literacy in a safe learning space.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <article class="program-card">
+                            <div class="program-icon"><i class="fas fa-heart"></i></div>
+                            <h3>Life Skills</h3>
+                            <p>Confidence, communication, hygiene and values that prepare children for life beyond school.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <article class="program-card">
+                            <div class="program-icon"><i class="fas fa-utensils"></i></div>
+                            <h3>Nutrition Support</h3>
+                            <p>Healthy meals and nutrition awareness so children can learn with energy and focus.</p>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-3 reveal">
+                        <article class="program-card">
+                            <div class="program-icon"><i class="fas fa-laptop"></i></div>
+                            <h3>Digital Literacy</h3>
+                            <p>Basic computer and internet skills to open doors in a digital-first world.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="volunteer" class="section">
+            <div class="container">
+                <div class="section-head text-center reveal">
+                    <span class="eyebrow">Get Involved</span>
+                    <h2 class="section-title">Join Our Volunteer Program</h2>
+                    <p class="section-text mx-auto">Your time and skills can transform a child's life. Fill the form below to start your journey with us.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-6 reveal">
+                        <div class="form-card">
+                            <form id="volunteerForm" novalidate>
                                 <div class="row g-3">
                                     <div class="col-md-6">
-                                        <label class="form-label">First Name *</label>
-                                        <input type="text" class="form-control" required>
+                                        <label for="firstName" class="form-label">First Name *</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                        <div class="invalid-feedback">Please provide your first name.</div>
                                     </div>
                                     <div class="col-md-6">
-                                        <label class="form-label">Last Name *</label>
-                                        <input type="text" class="form-control" required>
-                                    </div>
-                                    <div class="col-12">
-                                        <label class="form-label">Email *</label>
-                                        <input type="email" class="form-control" required>
-                                    </div>
-                                    <div class="col-12">
-                                        <label class="form-label">Phone *</label>
-                                        <input type="tel" class="form-control" required>
+                                        <label for="lastName" class="form-label">Last Name *</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                        <div class="invalid-feedback">Please provide your last name.</div>
                                     </div>
                                     <div class="col-md-6">
-                                        <label class="form-label">Age *</label>
-                                        <input type="number" class="form-control" min="18" required>
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                        <div class="invalid-feedback">Please provide a valid email.</div>
                                     </div>
                                     <div class="col-md-6">
-                                        <label class="form-label">Occupation</label>
-                                        <input type="text" class="form-control">
+                                        <label for="phone" class="form-label">Phone Number *</label>
+                                        <input type="tel" class="form-control" id="phone" required pattern="[0-9+\-\s]{7,15}">
+                                        <div class="invalid-feedback">Please provide a valid phone number.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="age" class="form-label">Age *</label>
+                                        <input type="number" class="form-control" id="age" min="18" max="100" required>
+                                        <div class="invalid-feedback">You must be 18 or older.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="availability" class="form-label">Availability *</label>
+                                        <select class="form-select" id="availability" required>
+                                            <option value="" selected disabled>Select availability</option>
+                                            <option value="weekdays">Weekdays</option>
+                                            <option value="weekends">Weekends</option>
+                                            <option value="both">Both</option>
+                                            <option value="flexible">Flexible</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select your availability.</div>
                                     </div>
                                     <div class="col-12">
-                                        <label class="form-label">Why volunteer with us? *</label>
-                                        <textarea class="form-control" rows="3" required></textarea>
+                                        <label for="motivation" class="form-label">Why do you want to volunteer? *</label>
+                                        <textarea class="form-control" id="motivation" rows="4" required></textarea>
+                                        <div class="invalid-feedback">Please tell us why you'd like to volunteer.</div>
                                     </div>
-                                    <div class="col-12 mt-3">
-                                        <button type="submit" class="btn btn-primary btn-lg w-100 py-3">Submit Application</button>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-brand btn-lg w-100 py-3">Submit Application</button>
+                                    </div>
+                                    <div class="col-12">
+                                        <div id="formSuccess" class="alert alert-success d-none" role="alert">
+                                            <i class="fas fa-check-circle me-2"></i>Thank you! Your application has been received. We'll get back to you soon.
+                                        </div>
                                     </div>
                                 </div>
                             </form>
@@ -220,104 +233,93 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold mb-3">Contact Us</h2>
-                <p class="lead text-muted">We'd love to hear from you</p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="contact-card card h-100 border-0 shadow-sm text-center p-4">
-                        <i class="fas fa-map-marker-alt fa-2x mb-3 text-primary"></i>
-                        <h5>Our Address</h5>
-                        <p class="text-muted mb-0">123 Education Lane, New Delhi 110001</p>
-                    </div>
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <div class="section-head text-center reveal">
+                    <span class="eyebrow">Reach Out</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-text mx-auto">Reach out for collaborations, donations, or any query — we'd love to hear from you.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="contact-card card h-100 border-0 shadow-sm text-center p-4">
-                        <i class="fas fa-phone-alt fa-2x mb-3 text-primary"></i>
-                        <h5>Call Us</h5>
-                        <p class="text-muted mb-0">+91 1234567890</p>
-                        <p class="text-muted mb-0">Mon-Fri, 9am-5pm</p>
+                <div class="row g-4">
+                    <div class="col-md-4 reveal">
+                        <div class="contact-card h-100">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <h3>Our Address</h3>
+                            <p>123 Education Lane,<br>New Delhi 110001, India</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="contact-card card h-100 border-0 shadow-sm text-center p-4">
-                        <i class="fas fa-envelope fa-2x mb-3 text-primary"></i>
-                        <h5>Email Us</h5>
-                        <p class="text-muted mb-0">sajidalamhere@gmail.com</p>
-                        <p class="text-muted mb-0">sajidalamhere@gmail.com</p>
+                    <div class="col-md-4 reveal">
+                        <div class="contact-card h-100">
+                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <h3>Call Us</h3>
+                            <p>+91 98765 43210<br>Mon–Fri, 9am–5pm</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 reveal">
+                        <div class="contact-card h-100">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <h3>Email Us</h3>
+                            <p>sajidalamhere@gmail.com<br>We reply within 48 hours</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="py-5 text-white">
+    <footer class="footer">
         <div class="container">
-            <div class="row g-4">
+            <div class="row g-4 pb-4">
                 <div class="col-lg-4">
-                    <img src="logo.png" alt="Logo" height="40" class="mb-3">
-                    <p>Empowering children through education since 2015.</p>
+                    <img src="logo.png" alt="Basti Ki Pathshala Foundation logo" height="44" class="mb-3">
+                    <p class="footer-text">Empowering underprivileged children through quality education since 2015.</p>
                     <div class="social-icons">
-                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/thesajidalam/" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/thesajidalam" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/thesajidalam/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#home" class="text-white">Home</a></li>
-                        <li><a href="#about" class="text-white">About</a></li>
-                        <li><a href="#volunteer" class="text-white">Volunteer</a></li>
-                        <li><a href="#contact" class="text-white">Contact</a></li>
+                <div class="col-6 col-lg-2">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#volunteer">Volunteer</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <h5>Newsletter</h5>
-                    <p>Subscribe for updates</p>
-                    <div class="input-group mb-3">
-                        <input type="email" class="form-control" placeholder="sajidalamhere@gmail.com">
-                        <button class="btn btn-primary" type="button">Subscribe</button>
-                    </div>
+                <div class="col-6 col-lg-3">
+                    <h4>Get Updates</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/thesajidalam" target="_blank" rel="noopener">GitHub — @thesajidalam</a></li>
+                        <li><a href="https://www.linkedin.com/in/thesajidalam/" target="_blank" rel="noopener">LinkedIn — @thesajidalam</a></li>
+                        <li><a href="mailto:sajidalamhere@gmail.com">sajidalamhere@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Newsletter</h4>
+                    <form id="newsletterForm" class="footer-newsletter" novalidate>
+                        <input type="email" class="form-control" placeholder="Enter your email" required aria-label="Email address for newsletter">
+                        <div class="invalid-feedback">Please enter a valid email.</div>
+                        <button type="submit" class="btn btn-brand w-100 mt-2"><i class="fas fa-paper-plane me-2"></i>Subscribe</button>
+                    </form>
+                    <p class="newsletter-note" id="newsletterNote"></p>
                 </div>
             </div>
-            <hr class="my-4">
-            <div class="text-center">
-                <p class="mb-0">&copy; Homepage Designed By SAJID ALAM 💖</p>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Basti Ki Pathshala Foundation. All rights reserved.</p>
+                <p>Designed by <a href="https://github.com/thesajidalam" target="_blank" rel="noopener">@thesajidalam</a></p>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-        
-        // Navbar shadow on scroll
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('shadow-sm');
-            } else {
-                navbar.classList.remove('shadow-sm');
-            }
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
